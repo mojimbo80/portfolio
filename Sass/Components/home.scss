@@ -1,0 +1,13 @@
+.home {
+  &__welcome {
+    font-size: $xxxx-large;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}

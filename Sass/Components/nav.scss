@@ -1,0 +1,111 @@
+.nav {
+  padding: 1rem 2rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__brand {
+    font-size: $large;
+    color: $color-black;
+    font-weight: bold;
+  }
+
+  &__menu {
+    z-index: 9999;
+    width: 100%;
+    top: 35px;
+    left: -1000px;
+    position: absolute;
+    background-color: $color-black;
+    transition-duration: 0.5s;
+
+    &.isOpen {
+      left: 0;
+    }
+      li {
+        a {
+
+          color: $color-white;
+          display: inline-block;
+          font-size: $large;
+          padding: 1rem;
+        }
+      }
+    &__cv {
+      background-color: $color-black;
+      padding: 0.1rem 0.25rem;
+      border-radius: 1rem;
+      a {
+        color: $color-white !important;
+      }
+    }
+    }
+
+  .anticon-menu {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    &:focus, &:active {
+      border: 0;
+    }
+    
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 3rem 23rem 5rem 23rem;
+    display: flex;
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__brand {
+      font-size: $xxx-large;
+      color: $color-black;
+      font-weight: bold;
+      display: flex;
+      width: 40%;
+    }
+
+    .anticon-menu {
+      display: none;
+    }
+
+      &__menu {
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        background-color: $color-white;
+        position: relative;
+        left: 0;
+        transition-duration: 0s;
+
+        &.isOpen {
+          display: flex;
+          flex-direction: row;
+          top: 0;
+        }
+
+          li {
+            margin-left: 2rem;
+            a {
+              color: $color-black;
+              font-size: $x-large;
+              padding: .25rem 0.75rem;
+            }
+        }
+      }
+    }
+}
+

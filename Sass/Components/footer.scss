@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+
+  &__credits, &__website-version {
+    font-family: $color-black;
+    font-size: $medium;
+  }
+
+  img {
+    width: 2.4rem;
+  }
+}
